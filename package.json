@@ -72,5 +72,8 @@
       "blacklist": [
          "/example/modal/basic/4"
       ]
+   },
+   "dependencies": {
+      "axios": "^0.21.1"
    }
 }
