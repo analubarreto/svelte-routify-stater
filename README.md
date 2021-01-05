@@ -6,14 +6,32 @@ A starter template using svelte, routify, tailwindcss and typescript
 
 #### Starter templates
 
-To use this template you click at: "Use this template" on the top of the commit list.
-That will create a new github repo with this template after you create your repository you can clone it using:
+***You need the latest Node LTS version.***
 
+1. To use this clone the repo to your computer
 ```
-git clone git@github.com:{your_user_name}/{your_repository}.git
+git@github.com:analubarreto/svelte-starter.git
 ```
-
+2. Add the needed files with the code below
+3. Install dependencies
+```
+npm install
+```
+4. Remove remote
+```
+git remote rm <remote-name>
+```
+5. Create a new github repository for your project
+6. Add your project repository to remote
+```
+git remote add origin git@github.com:{your_user_name}/{your_repo}.git
+```
 Note that you should remove the curly braces for this to work.
+7. Start the project
+```
+npm run dev
+```
+
 
 #### Used techs
 
@@ -110,12 +128,33 @@ Um modelo inicial usando svelte, routify, tailwindcss e typescript
 
 #### Modelos iniciais
 
-Para usar este modelo, você clica em: "Use este modelo" no topo da lista de commits.
-Isso criará um novo repo github com este modelo depois de criar seu repositório, você pode cloná-lo usando:
+*** Você precisa da versão mais recente do Node LTS. ***
 
-`` ` git clone git@github.com: {your_user_name} / {your_repository} .git `` `
+1. Para usar este clone o repo em seu computador
+```
+git@github.com:analubarreto/svelte-starter.git
+```
+2. Adicione os arquivos necessários com o código abaixo
+3. Instale dependências
+```
+npm install
+```
+4. Remova o respositório remoto
+```
+git remote rm <remote-name>
+```
+
+5. Crie um novo repositório github para seu projeto
+6. Adicione seu repositório de projeto ao remoto
+```
+git remote add origin git@github.com: {your_user_name} / {your_repo} .git
+```
 
 Observe que você deve remover as chaves para que isso funcione.
+7. Inicie o projeto
+```
+npm run dev
+```
 
 #### Tecnologias usadas
 
@@ -212,14 +251,33 @@ Una plantilla de inicio que utiliza svelte, routify, tailwindcss y typescript
 
 #### Plantillas de inicio
 
-Para usar esta plantilla, haga clic en: "Usar esta plantilla" en la parte superior de la lista de confirmaciones.
-Eso creará un nuevo repositorio de github con esta plantilla después de crear su repositorio, puede clonarlo usando:
+*** Necesita la última versión de Node LTS. ***
 
-''
-git clone git@github.com: {your_user_name}/{your_repository}.git
-''
+1. Para usar este clon del repositorio en su computadora
+```
+git@github.com:analubarreto/svelte-starter.git
+```
+2. Agregue los archivos necesarios con el siguiente código
+3. Instalar dependencias
+```
+npm install
+```
+4. Retire el repositorio remoto
 
+```
+git remote rm <remote-name>
+```
+
+5. Cree un nuevo repositorio de github para su proyecto
+6. Agregue su repositorio de proyectos a remoto
+```
+git remote add origin git@github.com: {su_numbre} / {su_repo} .git
+```
 Tenga en cuenta que debe quitar las llaves para que esto funcione.
+7. Inicie el proyecto
+```
+npm run dev
+```
 
 #### Tecnologías usadas
 
