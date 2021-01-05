@@ -90,17 +90,17 @@ and
 You don't need to use these settings, these are just examples I got from:
 [Setup Prettier and ESLint](https://dev.to/mhaecker/use-airbnb-s-eslint-config-with-typescript-prettier-in-svelte-apps-4fb7)
 
-### Missing rollup file
+### Missing .nolluprc.js file
 In your root folder add .nolluprc.js with this code:
 ```
-module.exports {
+module.exports = {
   hot: true,
   contentBase: 'assets',
   publicPath: 'build',
   historyApiFallback: '__app.html',
   port: 5000
  }
-```
+ ```
 
 # (PT-BR) Svelte com Routify
 
@@ -192,10 +192,10 @@ and
 Você não precisa usar essas configurações, essas são sugestões que eu peguei daqui:
 [Setup Prettier and ESLint](https://dev.to/mhaecker/use-airbnb-s-eslint-config-with-typescript-prettier-in-svelte-apps-4fb7)
 
-### Arquivo rollup faltando
+### Arquivo .nolluprc.js faltando
 Na raiz do seu projeto adicione .nolluprc.js com esse código:
 ```
-module.exports {
+module.exports = {
   hot: true,
   contentBase: 'assets',
   publicPath: 'build',
@@ -296,9 +296,11 @@ and
 No necesita usar esta configuración, estos son solo ejemplos que obtuve de:
 [Setup Prettier and ESLint](https://dev.to/mhaecker/use-airbnb-s-eslint-config-with-typescript-prettier-in-svelte-apps-4fb7)
 
+### Arquivo .nolluprc.js
+
 En la raíz de su proyecto, agregue .nolluprc.js con este código:
 ```
-module.exports {
+module.exports = {
   hot: true,
   contentBase: 'assets',
   publicPath: 'build',
