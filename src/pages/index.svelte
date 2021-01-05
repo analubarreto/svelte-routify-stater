@@ -1,8 +1,8 @@
 <script>
-	import Products from './products/index.svelte';
-	import { metatags } from '@roxi/routify';
-	metatags.title = 'Product List App';
-	metatags.description = 'A simple product list app';
+    import Home from './home.svelte'
+    import { metatags } from '@roxi/routify'
+    metatags.title = 'My Routify app'
+    metatags.description = 'Description coming soon...'
 </script>
 
-<Products />
+<Home />
