@@ -34,6 +34,62 @@ This is not a necessary folder, but it is advised you put your components here.
 
 This is a necessary folder where routes are created. It's advised to create a folder like blog with a index and [content].svelte only if you have a route with dynamic sub routes.
 
+### Prettier and ESLint
+To use these you have to create the configuration files:
+.eslintrc.js
+```
+module.exports = {
+  root: true,
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+    project: ["./tsconfig.json"],
+  },
+  rules: {
+    "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
+    "import/no-mutable-exports": 0,
+    "no-labels": 0,
+    "no-restricted-syntax": 0,
+  },
+  plugins: ["@typescript-eslint", "svelte3"],
+  extends: [
+    "airbnb-typescript",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:eslint-comments/recommended",
+    "plugin:promise/recommended",
+    "prettier",
+    "prettier/@typescript-eslint",
+  ],
+  overrides: [
+    {
+      files: ["**/*.svelte"],
+      processor: "svelte3/svelte3",
+    },
+  ],
+};
+```
+and
+.prettierrc
+```
+{
+  "singleQuote": true,
+  "trailingComma": "all",
+  "useTabs": true,
+  "tabWidth": 4,
+  "printWidth": 100,
+  "overrides": [
+    {
+      "files": "*.ts",
+      "options": {
+        "parser": "typescript"
+      }
+    }
+  ]
+}
+```
+You don't need to use these settings, these are just examples I got from:
+[Setup Prettier and ESLint](https://dev.to/mhaecker/use-airbnb-s-eslint-config-with-typescript-prettier-in-svelte-apps-4fb7)
+
 # (PT-BR) Svelte com Routify
 
 Um modelo inicial usando svelte, routify, tailwindcss e typescript
@@ -67,6 +123,62 @@ Esta pasta não é necessária, mas é recomendado que você coloque seus compon
 #### Pasta de páginas
 
 Esta é uma pasta necessária onde as rotas são criadas. É aconselhável criar uma pasta como blog com um índice e [conteudo].svelte apenas se você tiver uma rota com rotas secundárias dinâmicas.
+
+### Prettier e ESLint
+Para usar, você precisa adicionar os seguintes arquivos de configuração:
+.eslintrc.js
+```
+module.exports = {
+  root: true,
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+    project: ["./tsconfig.json"],
+  },
+  rules: {
+    "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
+    "import/no-mutable-exports": 0,
+    "no-labels": 0,
+    "no-restricted-syntax": 0,
+  },
+  plugins: ["@typescript-eslint", "svelte3"],
+  extends: [
+    "airbnb-typescript",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:eslint-comments/recommended",
+    "plugin:promise/recommended",
+    "prettier",
+    "prettier/@typescript-eslint",
+  ],
+  overrides: [
+    {
+      files: ["**/*.svelte"],
+      processor: "svelte3/svelte3",
+    },
+  ],
+};
+```
+and
+.prettierrc
+```
+{
+  "singleQuote": true,
+  "trailingComma": "all",
+  "useTabs": true,
+  "tabWidth": 4,
+  "printWidth": 100,
+  "overrides": [
+    {
+      "files": "*.ts",
+      "options": {
+        "parser": "typescript"
+      }
+    }
+  ]
+}
+```
+Você não precisa usar essas configurações, essas são sugestões que eu peguei daqui:
+[Setup Prettier and ESLint](https://dev.to/mhaecker/use-airbnb-s-eslint-config-with-typescript-prettier-in-svelte-apps-4fb7)
 
 # (ES-ES) Svelte con Routify
 
@@ -103,3 +215,59 @@ Esta no es una carpeta necesaria, pero se recomiends que coloque sus componentes
 #### Carpeta de Pagina
 
 Esta es una carpeta necesaria donde se crean las rutas. Se recomienda crear una carpeta como blog con un índice y [contenido].svelte solo si tiene una ruta con subrutas dinámicas.
+
+### Prettier y ESLint
+Para usarlos, debe crear los archivos de configuración:
+.eslintrc.js
+```
+module.exports = {
+  root: true,
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+    project: ["./tsconfig.json"],
+  },
+  rules: {
+    "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
+    "import/no-mutable-exports": 0,
+    "no-labels": 0,
+    "no-restricted-syntax": 0,
+  },
+  plugins: ["@typescript-eslint", "svelte3"],
+  extends: [
+    "airbnb-typescript",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:eslint-comments/recommended",
+    "plugin:promise/recommended",
+    "prettier",
+    "prettier/@typescript-eslint",
+  ],
+  overrides: [
+    {
+      files: ["**/*.svelte"],
+      processor: "svelte3/svelte3",
+    },
+  ],
+};
+```
+and
+.prettierrc
+```
+{
+  "singleQuote": true,
+  "trailingComma": "all",
+  "useTabs": true,
+  "tabWidth": 4,
+  "printWidth": 100,
+  "overrides": [
+    {
+      "files": "*.ts",
+      "options": {
+        "parser": "typescript"
+      }
+    }
+  ]
+}
+```
+No necesita usar esta configuración, estos son solo ejemplos que obtuve de:
+[Setup Prettier and ESLint](https://dev.to/mhaecker/use-airbnb-s-eslint-config-with-typescript-prettier-in-svelte-apps-4fb7)
