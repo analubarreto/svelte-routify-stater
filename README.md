@@ -13,7 +13,7 @@ A starter template using svelte, routify, tailwindcss and typescript
 git@github.com:analubarreto/svelte-starter.git
 ```
 2. Add the needed files with the code below
-** I did add these to the project, but there is always the change that .gitgnore will remove them 
+
 3. Install dependencies
 ```
 npm install
