@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
 	import { url } from '@roxi/routify';
-	export let routes;
+	export let routes: { name: string; href: string }[];
 </script>
 
 <header class="z-10 mb-10">

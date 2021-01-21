@@ -5,7 +5,11 @@
 
 	export let id: string;
 
-	let selectedPost: Object[];
+	let selectedPost: {
+		_id: string;
+		text: string[];
+		title: string;
+	};
 
 	const unsubscribe = posts.subscribe((posts) => {
 		selectedPost = posts.find((p) => p.id === id);
@@ -18,7 +22,7 @@
 	});
 </script>
 
-<main class="flex flex-col">
+<main class="flex flex-col  mx-8 my-10">
 	<h1 class="text-4xl mb-5 mt-5">{selectedPost.title}</h1>
 	{#each paragraphs as paragraph}
 		<p>{paragraph}</p>

@@ -4,7 +4,7 @@
 	import Post from '../../components/blog/Post.svelte';
 	import posts from '../../components/blog/blog-store';
 
-	let postData: Object = {};
+	let postData: { _id: string } = { _id: '' };
 	const route = $url();
 
 	const unsubscribe = posts.subscribe((posts) => {
@@ -14,8 +14,7 @@
 		const routeParam: string = route.substr(blogRouteLength, lastChar);
 		posts.forEach((p) => {
 			if (p.id === routeParam) {
-				// @ts-ignore
-				postData.id = p.id;
+				postData._id = p.id;
 			}
 		});
 	});

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Navbar from '../components/app-wide/Navbar.svelte';
-	let routes: Object[] = [
+	let routes: { name: string; href: string }[] = [
 		{
 			name: 'Home',
 			href: '/',
