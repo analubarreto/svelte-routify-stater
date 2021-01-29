@@ -1,5 +1,7 @@
 import svelte from 'rollup-plugin-svelte-hot';
-import Hmr from 'rollup-plugin-hot'
+import Hmr from 'rollup-plugin-hot';
+import { config } from 'dotenv';
+import replace from '@rollup/plugin-replace';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
@@ -9,7 +11,6 @@ import { copySync, removeSync } from 'fs-extra'
 import { spassr } from 'spassr'
 import getConfig from '@roxi/routify/lib/utils/config'
 import autoPreprocess from 'svelte-preprocess'
-import postcssImport from 'postcss-import'
 import { injectManifest } from 'rollup-plugin-workbox'
 
 
@@ -61,6 +62,15 @@ export default {
                     defaults: { style: 'postcss' }
                 })
             ]
+        }),
+        // Env variables
+        replace({
+            process: JSON.stringify({
+                env: {
+                    // EXAMPLE => API_URL: process.env.API_URL,
+                    ...config().parsed
+                }
+            })
         }),
 
         // resolve matching modules from current working directory
