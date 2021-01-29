@@ -2,6 +2,9 @@
 	import { onDestroy } from 'svelte';
 	import { url } from '@roxi/routify';
 	import posts from './blog-store';
+	import { vars } from '../../utils/envVariables';
+
+	// example => vars.apiUrl
 
 	export let id: string;
 
