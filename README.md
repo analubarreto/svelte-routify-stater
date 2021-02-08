@@ -96,6 +96,13 @@ replace({
 
 \*\* There is an example of use inside Post.svelte
 
+### Testing PWAs
+
+PWAs only run on a production environment, so if you are testing this on localhost you have to go through these steps:
+
+1. run `npm run build`
+2. run `npm run serve`
+
 # (PT-BR) Svelte com Routify
 
 Um modelo inicial usando svelte, routify, tailwindcss e typescript
@@ -185,6 +192,13 @@ replace({
     })
 }),
 ```
+
+### Testando PWAs
+
+Os PWAs são executados apenas em um ambiente de produção, portanto, se você estiver testando no localhost, siga estas etapas:
+
+1. rode `npm run build`
+2. rode `npm run serve`
 
 3. Remova o exemplo
 4. Adicione suas próprias variáveis de acordo com o nome que você usou em seu arquivo .env
@@ -289,3 +303,10 @@ replace({
 6. (opcional) Importe el archivo envVariables.js al archivo que necesita para usar sus variables y úselo a voluntad.
 
 \*\* Hay un ejemplo de uso dentro de Post.svelte
+
+### Testando PWAs
+
+Los PWA solo se ejecutan en un entorno de producción, por lo que si está probando esto en localhost, debe seguir estos pasos:
+
+1. corra `npm run build`
+2. corra `npm run serve`
