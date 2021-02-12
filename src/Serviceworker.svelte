@@ -14,6 +14,13 @@
 				location.reload();
 				console.log('updated app');
 			});
+
+			// Open install prompt
+			wb.addEventListener('beforeinstallprompt', (e) => {
+				e.preventDefault();
+				deferredPrompt = e;
+				showInstallPromotion();
+			});
 		});
 	}
 </script>

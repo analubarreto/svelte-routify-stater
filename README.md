@@ -103,6 +103,14 @@ PWAs only run on a production environment, so if you are testing this on localho
 1. run `npm run build`
 2. run `npm run serve`
 
+### Lazy Image Loading
+
+Lazy image loading has been added, the file lazySize.js inside util is responsible for it. It is rendered inside \_\_app.html. To use it in your images follow the example below:
+
+```
+<img src="image-source" alt="alt-text" class="lazyload" />
+```
+
 # (PT-BR) Svelte com Routify
 
 Um modelo inicial usando svelte, routify, tailwindcss e typescript
@@ -193,19 +201,20 @@ replace({
 }),
 ```
 
+### Lazy Image Loading
+
+O carregamento lento da imagem foi adicionado, o arquivo lazySize.js dentro do util é responsável por isso. Ele é renderizado dentro de \_\_app.html. Para utilizá-lo em suas imagens siga o exemplo abaixo:
+
+```
+<img src="image-source" alt="alt-text" class="lazyload" />
+```
+
 ### Testando PWAs
 
 Os PWAs são executados apenas em um ambiente de produção, portanto, se você estiver testando no localhost, siga estas etapas:
 
 1. rode `npm run build`
 2. rode `npm run serve`
-
-3. Remova o exemplo
-4. Adicione suas próprias variáveis de acordo com o nome que você usou em seu arquivo .env
-5. (opcional) Vá para a pasta utils dentro de src, dentro de envVariables.js e adicione atalhos para suas variáveis
-6. (opcional) Importe o arquivo envVariables.js dentro do arquivo que você precisa para usar suas variáveis e use-o à vontade.
-
-\*\* Há um exemplo de uso dentro de Post.svelte
 
 # (ES-ES) Svelte con Routify
 
@@ -310,3 +319,11 @@ Los PWA solo se ejecutan en un entorno de producción, por lo que si está proba
 
 1. corra `npm run build`
 2. corra `npm run serve`
+
+### Lazy Image Loading
+
+Se ha agregado la carga diferida de imágenes, el archivo lazySize.js dentro de util es responsable de ello. Se representa dentro de \_\_app.html. Para usarlo en tus imágenes sigue el siguiente ejemplo:
+
+```
+<img src="image-source" alt="alt-text" class="lazyload" />
+```
