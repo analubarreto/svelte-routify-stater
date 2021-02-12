@@ -1,6 +1,8 @@
 # Svelte with Routify
 
 A starter template using svelte, routify, tailwindcss and typescript
+Like my work? Will you buy me a coffee?
+https://www.buymeacoffee.com/analu
 
 ### Get started
 
