@@ -4,6 +4,9 @@ A starter template using svelte, routify, tailwindcss and typescript
 Like my work? Will you buy me a coffee?
 https://www.buymeacoffee.com/analu
 
+!!! DISCLAIMER !!! <br />
+This is not compatible with either Firebase or Amplify, I believe it's because of Routify. I'm working on a new template that should work with both. As soon as I have something I'll post it here.
+
 ### Get started
 
 #### Starter templates
