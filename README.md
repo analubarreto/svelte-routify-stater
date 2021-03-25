@@ -9,6 +9,11 @@ This is not compatible with either Firebase or Amplify, I believe it's because o
 
 ### Get started
 
+This is deprecated, please use either:
+(New Svelte Starter)[https://github.com/analubarreto/new-svelte-starter]
+or
+(SvelteKit Tailwind Starter)[https://github.com/analubarreto/sveltekit-tailwind-starter]
+
 #### Starter templates
 
 1. To use this clone the repo to your computer (method 1)
@@ -119,6 +124,10 @@ Lazy image loading has been added, the file lazySize.js inside util is responsib
 # (PT-BR) Svelte com Routify
 
 Um modelo inicial usando svelte, routify, tailwindcss e typescript
+Isso está obsoleto, por favor, use:
+(New Svelte Starter)[https://github.com/analubarreto/new-svelte-starter]
+ou
+(SvelteKit Tailwind Starter)[https://github.com/analubarreto/sveltekit-tailwind-starter]
 
 ### Iniciar
 
@@ -224,6 +233,11 @@ Os PWAs são executados apenas em um ambiente de produção, portanto, se você 
 # (ES-ES) Svelte con Routify
 
 Una plantilla de inicio que utiliza svelte, routify, tailwindcss y typescript
+
+Esto está obsoleto, por favor use:
+(New Svelte Starter)[https://github.com/analubarreto/new-svelte-starter]
+o
+(SvelteKit Tailwind Starter)[https://github.com/analubarreto/sveltekit-tailwind-starter]
 
 ### Empezar
 
